@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    /* CSS link not working, using <style> tag until free time to update it */
+    body {
+        background-color: darksalmon;
+        text-align: left;
+        margin-top: 50px;
+        font-size: xx-large;
+    }
+    #one {
+        text-align: left;
+        font-style: italic;
+        color: #7AE996;
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -9,18 +23,19 @@
 </head>
 
 <body>
+    <p id="one">Login</p>
     <form action="/login" method="post" autocomplete='on'>
-        <div>
+        <div class="username1">
             <span>Username</span>
             <input type="text" placeholder="Username" name="username" autocomplete="username">
         </div>
-        <div>
+        <div class="password1">
             <span>Password</span>
             <input type="password" placeholder="Password" name="password" autocomplete="password">
         </div>
         <input type="submit" value="Login">
     </form>
-    <a href="/signup">Signup</a>
+    <p>No account? <a href="/signup">Signup</a> here</p>
 </body>
 
 </html>
