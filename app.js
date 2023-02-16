@@ -26,8 +26,6 @@ app.use(session({
 // Setup Variables
 const port = 3000;
 
-teacher = false
-
 // Functions
 function isAuthenticated(request, response, next) {
   if (request.session.user) next();
@@ -192,7 +190,7 @@ app.get('/deleteAccount', function (request, response) {
 })
 
 app.get('/acc', function (request, response) {
-  database.get(`SELECT * FROM users Where perms = 0`, (error, results) => {
+  database.get(`SELECT * FROM users`, (error, results) => {
     if (results) {
       database.get('SELECT * FROM users', function (error, results) {
         console.log(results)
