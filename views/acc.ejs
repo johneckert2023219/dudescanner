@@ -1,40 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-    CSS link not working, using <style> tag until free time to update it
-    body {
-        background-color: darksalmon;
-        text-align: left;
-        margin: 50px;
-    }
-
-    #links {
-        text-align: left;
-        margin-top: 5px;
-        font-size: x-large;
-    }
-
-    #user {
-        font-size: xx-large;
-        color: #7AE996;
-    }
-
-    #userperms {
-        font-size: xx-large;
-        color: #7AE996;
-    }
-</style>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Accounts</title>
 </head>
 <div class="userInfo">
 
-    <body>
+    <body id="acc">
         <div id="user">
             <%= user %>
         </div>
@@ -45,8 +21,8 @@
         </div>
 
         <div id="links">
-            <a id="home" href="/">home</a>
-            <a href="/logout">logout</a>
+            <a id="home" href="/">Home <br></a>
+            <a href="/logout">Logout <br></a>
         </div>
     </body>
 </div>

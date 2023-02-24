@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    /* CSS link not working, using <style> tag until free time to update it */
-    body {
-        background-color: darksalmon;
-        font-size: xx-large;
-        text-align: center;
-    }
-    div {
-        text-align: left;
-        margin-top: 50px;
-    }
-</style>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
     <script>
-    function confirmDelete() {
-        if (confirm('Are you sure you want to delete your account?')) {
-            window.location.href = "/deleteAccount";
+        function confirmDelete() {
+            if (confirm('Are you sure you want to delete your account?')) {
+                window.location.href = "/deleteAccount";
+            }
         }
-    }
     </script>
 </head>
 
-<body>
+<body id="index">
     <p>Welcome Back <%=user%>!</p>
     <div>
-    <a href="/logout">logout</a>
-    <a href="/changePassword">Change Password</a>
-    <% if (perms == 0) { %>
-        <a href="/acc">View Accounts</a>
-    <% } %>
-    <button onclick='confirmDelete()'>Delete Account</button>
+        <a href="/changePassword">Change Password<br></a>
+        <% if (perms==0) { %>
+            <a href="/acc">View Accounts<br></a>
+            <% } %>
+        <a href="/logout">Logout<br></a>
+                <button onclick='confirmDelete()'>Delete Account<br></button>
     </div>
 </body>
 

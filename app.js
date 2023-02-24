@@ -11,6 +11,7 @@ const database = new sqlite3.Database('./database.db', sqlite3.OPEN_READWRITE);
 
 // Express Setup
 const app = express();
+app.use(express.static(__dirname + '/static'));
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
