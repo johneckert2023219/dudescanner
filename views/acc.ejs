@@ -2,9 +2,9 @@
 <html lang="en">
 
 <style>
-    CSS link not working, using <style> tag until free time to update it
+    /* CSS link not working, using <style> tag until free time to update it */
     body {
-        background-color: darksalmon;
+        background-color: #FF8040;
         text-align: left;
         margin: 50px;
     }
@@ -17,12 +17,12 @@
 
     #user {
         font-size: xx-large;
-        color: #7AE996;
+        color: #1E3A25;
     }
 
     #userperms {
         font-size: xx-large;
-        color: #7AE996;
+        color: #1E3A25;
     }
 </style>
 
@@ -36,7 +36,7 @@
 
     <body>
         <div id="user">
-            <%= user %>
+            Your username is <%= user %>
         </div>
         <div id="userperms">
             <% if (perms <= 0) { %>

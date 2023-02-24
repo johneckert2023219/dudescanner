@@ -1,2 +1,3 @@
 # dudescanner
-Electronic scanner for student ID's, for hall passes and rewards systems.
+A new hall pass system using electronic scanners for student ID's
+
